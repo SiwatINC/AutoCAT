@@ -1,0 +1,7 @@
+#Kinematics Configuration
+AZIMUTH_DIR = 3
+AZIMUTH_STEP = 4
+ELEVATION_DIR = 5
+ELEVATION_STEP = 6
+STEP_PER_DEGREE = 32
+#CV Configuration
