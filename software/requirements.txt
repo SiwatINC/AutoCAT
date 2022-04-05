@@ -1,0 +1,4 @@
+telemetrix
+opencv-python
+pillow
+perlin-noise
