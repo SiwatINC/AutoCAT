@@ -23,12 +23,10 @@ class kinematics:
 
     # Homing Functions
     def home_azimuth(self) -> None:
-        mcu = self.mcu
         self.mcu.stepper_move(motor_id=ID_AZIMUTH,relative_position=-350*STEP_PER_DEGREE)
         sleep(5)
         self.mcu.stepper_set_current_position(motor_id=ID_AZIMUTH,position=0)
     def home_elevation(self) -> None:
-        mcu = self.mcu
         self.mcu.stepper_move(motor_id=ID_ELEVATION,relative_position=-350*STEP_PER_DEGREE)
         sleep(5)
         self.mcu.stepper_set_current_position(motor_id=ID_ELEVATION,position=0)

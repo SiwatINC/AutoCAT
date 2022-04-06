@@ -1,7 +1,7 @@
 import cv2
 from PIL import ImageGrab, Image
 import numpy as np
-def detectCat(image: Image):
+def detect_cat(image: Image):
     image = np.asarray(image)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     detector = cv2.CascadeClassifier('software/haarcascade_frontalcatface_extended.xml')
